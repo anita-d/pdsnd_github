@@ -31,5 +31,9 @@ washington.csv
 
 ### Credits
 Forked from https://github.com/udacity/pdsnd_github
+
 Bikeshare.py inspired by Udacity project document
+
 Documentation (README.md) inspired by Udacity project templates
+
+https://ncona.com/2011/07/how-to-delete-a-commit-in-git-local-and-remote/ this blog helped me deleting a commit that was incorrectly added and pushed to the remote repository
