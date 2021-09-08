@@ -204,12 +204,15 @@ def user_stats(df):
     if 'User Type' in df.columns:
         user_type = pd.DataFrame((df['User Type']).value_counts()) #median()
         print('The count per user type is: \n{}'.format(user_type))
+    else:
+        print('There is no user type data available')
 
     # TO DO: Display counts of gender
     if 'Gender' in df.columns:
         gender = pd.DataFrame((df['Gender']).value_counts()) #median()
         print('The count per gender is: \n{}'.format(gender))
-
+    else:
+        print('There is no user gender data available')
 
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
@@ -217,6 +220,8 @@ def user_stats(df):
         birth_year_max = df['Birth Year'].max()
         birth_year_mode = df['Birth Year'].mode()[0]
         print('The earliest birth year was {:0.0f}, the most recent birth year was {:0.0f} and the most commonth birth year was {:0.0f}'.format(birth_year_min, birth_year_max, birth_year_mode))
+    else:
+        print('There is no birth year data available')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
