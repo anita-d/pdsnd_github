@@ -230,6 +230,7 @@ def raw_data_display(df):
     """Displays the raw data on bikeshare users.
 
     Args: df - dataframe"""
+    pd.set_option('display.max_columns',200) 
     start_row = 0
     end_row = 5
     while True:
