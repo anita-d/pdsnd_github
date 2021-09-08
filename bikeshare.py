@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 
 # bikeshare.py sample code and udacity quiz answers were used to help create the code in this file.
+# this app allows the user to explore the bikeshare data for the available cities and months, gives them lots of statistics
 
 CITY_DATA = { 'Chicago': 'chicago.csv',
               'New York City': 'new_york_city.csv',
